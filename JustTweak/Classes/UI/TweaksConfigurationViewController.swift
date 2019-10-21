@@ -174,8 +174,12 @@ extension TweaksConfigurationViewController {
                                                                    bundle: TweaksConfigurationViewController.justTweakResourcesBundle(),
                                                                    comment: "")
         searchController.searchBar.sizeToFit()
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
+        if #available(iOS 11.0, *) {
+            navigationItem.searchController = searchController
+            navigationItem.hidesSearchBarWhenScrolling = false
+        } else {
+            // Fallback on earlier versions
+        }
         definesPresentationContext = true
     }
     
