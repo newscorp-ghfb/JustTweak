@@ -12,7 +12,7 @@ JustTweak is a framework for feature flagging, locally and remotely configure an
   s.authors          = { 'Gianluca Tranchedone' => 'gianluca.tranchedone@just-eat.com', 'Alberto De Bortoli' => 'alberto.debortoli@just-eat.com', 'Dimitar Chakarov' => 'dimitar.chakarov@just-eat.com' }
   s.source           = { :git => 'https://github.com/justeat/JustTweak.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = '5.0'
 
   s.default_subspecs = 'Core', 'UI'
